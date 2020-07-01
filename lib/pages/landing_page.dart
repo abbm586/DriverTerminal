@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/widgets/drawer.dart';
 
 
 class LandingPage extends StatefulWidget {
@@ -15,10 +16,10 @@ class _LandingPageState extends State<LandingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-              icon: Icon( Icons.account_circle, size: 40.0, color: Colors.blueGrey,),
-                      onPressed: (){},
-                    ),
+//        leading: IconButton(
+//              icon: Icon( Icons.account_circle, size: 40.0, color: Colors.blueGrey,),
+//                      onPressed: (){},
+//                    ),
 
           title: Text('Driver Terminal', style: TextStyle(fontWeight: FontWeight.bold),),
         actions: <Widget>[
@@ -36,8 +37,9 @@ class _LandingPageState extends State<LandingPage> {
             ),
           )
         ],
-    ),
+      ),
 
+        drawer: UserDrawer(),
 
 
 
@@ -55,6 +57,13 @@ class _LandingPageState extends State<LandingPage> {
         bottomNavigationBar: BottomAppBar(
           shape: const CircularNotchedRectangle(),
           child: Container(
+            decoration: BoxDecoration(
+                color: Colors.white, borderRadius: BorderRadius.circular(8.0),
+                boxShadow: [ BoxShadow(
+                  color: Color.fromRGBO(143, 148, 251, .8),
+                  blurRadius: 20.0, offset: Offset(0, 10),)
+                ]
+            ),
             padding: EdgeInsets.only(left: 20.0, right: 55.0), height: 55.0,
               child: Row(
                 children: <Widget>[

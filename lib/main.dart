@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'file:///D:/Public/Projects/Flutter/DriverTerminal/lib/pages/landing_page.dart';
+import 'pages/landing_page.dart';
+//import 'pages/init_setup.dart';
+
 
 void main() {
   runApp(MyApp());
