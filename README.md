@@ -1,2 +1,2 @@
 # DriverTerminal
-Recreate the Takealot.com Driver-Terminal App
+Recreate Food Delivery Drivers with a terminal to receive orders and update deliverystatus
